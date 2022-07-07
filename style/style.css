@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background: #4475ef;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container .shape {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  aspect-ratio: 1;
+}
+.container .shape-1 {
+  top: 65%;
+  left: 35%;
+  width: 12rem;
+}
+.container .shape-2 {
+  bottom: 49%;
+  right: 31%;
+  width: 15rem;
+}
+.container .sub-container {
+  width: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 4em 1.8em;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.6em;
+}
+.container .sub-container .search-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.container .sub-container .search-container > input {
+  margin: 0 1rem;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  width: 70%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  font-weight: 300;
+}
+.container .sub-container .search-container > input::-moz-placeholder {
+  color: #e5e5e5;
+}
+.container .sub-container .search-container > input:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+.container .sub-container .search-container > input::placeholder {
+  color: #e5e5e5;
+}
+.container .sub-container .search-container > input:focus {
+  border-color: #ffffff;
+}
+.container .sub-container .search-container > button {
+  padding: 0.7rem 1rem;
+  border: none;
+  color: #4475ef;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+}
+.container .sub-container .city-name {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em 0;
+  word-spacing: 3px;
+  letter-spacing: 5px;
+}
+.container .sub-container .city-name h1 {
+  color: #ffffff;
+  margin-bottom: 0.7em;
+  font-weight: 500;
+}
+.container .sub-container .city-name span,
+.container .sub-container .city-name p {
+  color: #e5e5e5;
+}
+.container .sub-container .weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sub-container .weather > img {
+  width: 8%;
+  margin-bottom: 1em;
+}
+.container .sub-container .weather h1 {
+  color: #ffffff;
+  word-spacing: 3px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+.container .sub-container .weather .min-max {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+.container .sub-container .weather .min-max .min {
+  padding: 0 1em;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.container .sub-container .weather .min-max .min h6 {
+  color: #ffffff;
+  margin-bottom: -0.5em;
+}
+.container .sub-container .weather .min-max .min span {
+  color: #e5e5e5;
+  font-size: 0.6em;
+}
+.container .sub-container .weather .min-max .max {
+  padding: 0 1em;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.container .sub-container .weather .min-max .max h6 {
+  color: #ffffff;
+  margin-bottom: -0.5em;
+}
+.container .sub-container .weather .min-max .max span {
+  color: #e5e5e5;
+  font-size: 0.6em;
+}/*# sourceMappingURL=style.css.map */
